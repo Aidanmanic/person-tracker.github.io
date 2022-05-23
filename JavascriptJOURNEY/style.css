@@ -1,0 +1,82 @@
+body {
+  background-image: url("Images/Station.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: montserrat;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgb(175, 175, 175); /* Tint color */
+  background-blend-mode: multiply;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: white;
+}
+
+#count-el {
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#save-el {
+  font-size: 20px;
+  transform: translateY(5cm);
+  color: white;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  width: 350px;
+  font-size: 30px;
+  transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#increment-btn {
+  background-color: darkred;
+}
+
+#save-btn {
+  background-color: rgb(188, 15, 153);
+}
+
+#reset-btn {
+  background-color: rgb(52, 90, 228);
+}
+
+#decrement-btn {
+  background-color: crimson;
+}
+
+@media (max-width: 800px) {
+  button {
+    flex-direction: column;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  #save-el {
+    transform: translateY(3cm);
+  }
+}
